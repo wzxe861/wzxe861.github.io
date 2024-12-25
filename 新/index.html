@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人AI知识库</title>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入 Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 引入自定义样式 -->
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="js/main.js"></script>
+	<!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+	<link href="bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">个人AI知识库</a>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="index01.html" class="nav-link">工具使用</a></li>
+                <li><a href="index02.html" class="nav-link">资源收集</a></li>
+                <li><a href="index03.html" class="nav-link">个人简介</a></li>
+                <li><a href="index04.html" class="nav-link">数据可视化</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main>
+        <!-- 首页部分 -->
+        <section id="home" class="section active">
+            <div class="banner">
+                <h1>个人AI知识库</h1>
+                <p>探索知识的边界</p>
+            </div>
+
+<!-- 轮播 -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+ 
+   <!-- 指示符 -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- 轮播图片 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg" class="d-block" style="width:1100px" height="450px">
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg"  class="d-block" style="width:1100px" height="450px">
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg" class="d-block" style="width:1100px" height="450px">
+    </div>
+  </div>
+  
+  <!-- 左右切换按钮 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+  </section>   
+    </main>
+    <main class="main-container">
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="#tools-section" class="side-nav-link active">
+                    <i class="fas fa-tools"></i>工具使用
+                </a></li>
+                <li><a href="#resources-section" class="side-nav-link">
+                    <i class="fas fa-book"></i>资源收集
+                </a></li>
+                <li><a href="#profile-section" class="side-nav-link">
+                    <i class="fas fa-user"></i>个人简介
+                </a></li>
+                <li><a href="#notes-section" class="side-nav-link">
+                    <i class="fas fa-sticky-note"></i>学习笔记
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 主要内容区域 -->
+    <div class="content-area">
+        <!-- 工具使用部分 -->
+        <section id="tools-section" class="content-section active">
+    <h2><i class="fas fa-tools"></i> 常用工具</h2>
+    <div class="tools-intro">
+        <p class="section-intro">这里收集了一些在学习和工作中常用的工具软件，包括编程开发、内容创作、效率提升等多个方面的实用工具。每个工具都配有简要说明和使用指南。</p>
+    </div>
+    <div class="tools-categories">
+        <span class="tool-category"><i class="fas fa-code"></i> 开发工具</span>
+        <span class="tool-category"><i class="fas fa-robot"></i> AI 工具</span>
+        <span class="tool-category"><i class="fas fa-video"></i> 媒体工具</span>
+        <span class="tool-category"><i class="fas fa-tasks"></i> 效率工具</span>
+    </div>
+    <div class="tools-grid">
+        <!-- 工具卡片通过 JavaScript 动态生成 -->
+    </div>
+</section>
+
+        <!-- 资源收集部分 -->
+      <section id="resources-section" class="content-section">
+    <h2><i class="fas fa-book"></i> 学习资源</h2>
+    <div class="resources-intro">
+        <p class="section-intro">这里整理了学习过程中收集的优质学习资源，包括在线课程、电子书籍、视频教程等多种形式的学习材料。所有资源都经过筛选和整理，适合不同阶段的学习需求。</p>
+    </div>
+    <div class="resource-categories">
+        <span class="resource-category"><i class="fas fa-graduation-cap"></i> 在线课程</span>
+        <span class="resource-category"><i class="fas fa-book"></i> 电子书籍</span>
+        <span class="resource-category"><i class="fas fa-video"></i> 视频教程</span>
+        <span class="resource-category"><i class="fas fa-file-alt"></i> 技术文档</span>
+    </div>
+    <div class="resources-grid">
+        <!-- 资源卡片通过 JavaScript 动态生成 -->
+    </div>
+</section>
+
+        <!-- 个人简介部分 -->
+        <section id="profile-section" class="content-section">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="images/7.jpg" alt="个人头像" class="profile-avatar">
+                    <div class="profile-info">
+                        <h3>王张欣儿</h3>
+                        <p class="profile-title">全媒体运营 | 新闻摄影</p>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <p>专注于全媒体内容创作和运营，擅长新闻摄影和视频制作。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学习笔记部分 -->
+        <section id="notes-section" class="content-section">
+            <h2><i class="fas fa-sticky-note"></i> 学习记录</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <h3>视频拍摄技巧</h3>
+                    <p class="note-date">2024-03-20</p>
+                    <p class="note-excerpt">学习了构图原则和光线运用...</p>
+                </div>
+                <!-- 更多笔记卡片 -->
+            </div>
+        </section>
+    </div>
+</main>
+</main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:example@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">© 2024 个人AI知识库，保留所有权利</p>
+        </div>
+    </footer>
+
+    <!-- 引入 Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="js/main.js"></script>
+<script src="js/visualization.js"></script>
+</body>
+</html>
